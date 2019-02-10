@@ -1,0 +1,27 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "description": "crm rest services",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maswadkar/crm.git"
+  },
+  "keywords": [
+    "crm",
+    "rest"
+  ],
+  "author": "maswadkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maswadkar/crm/issues"
+  },
+  "homepage": "https://github.com/maswadkar/crm#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.1.13"
+  }
+}
