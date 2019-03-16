@@ -8,6 +8,9 @@ app = express();
 var customers = require('./src/customers')
 app.use('/customers',customers);
 
+var album = require('./src/album')
+app.use('/albums',album);
+
 
 app.listen(PORT)
 app.use(bodyParser.json());
