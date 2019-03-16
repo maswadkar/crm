@@ -12,6 +12,15 @@ var album = require('./src/album')
 app.use('/albums',album);
 
 
+var album = require('./src/singer')
+app.use('/singers',singer);
+
+
+var album = require('./src/director')
+app.use('/directors',director);
+
+
+
 app.listen(PORT)
 app.use(bodyParser.json());
 
