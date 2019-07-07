@@ -7,6 +7,10 @@ var mydb = 'crm';
 var cursor;
 
 var router = express.Router()
+
+router.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.json());
+
 var uri = 'mongodb://twitterx.organic-farmer.in:27017'
 
 // middleware that is specific to this router
