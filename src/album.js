@@ -5,8 +5,15 @@ var bodyParser = require('body-parser');
 var coll = 'album';
 var mydb = 'crm';
 var cursor;
+var bodyParser = require('body-parser');
+
 
 var router = express.Router()
+
+var uri = 'mongodb://twitterx.organic-farmer.in:27017'
+
+router.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.json());
 
 
 // middleware that is specific to this router
@@ -16,7 +23,7 @@ router.use(function timeLog(req, res, next) {
 })
 
 // Connect to the db
-mongoClient.connect('mongodb://mongodb-11:27017', { useNewUrlParser: true }, function (err, client) {
+mongoClient.connect(uri, { useNewUrlParser: true }, function (err, client) {
     if (!err) {
         cursor = client.db(mydb).collection(coll);
     } else {

@@ -17,6 +17,8 @@ app.use('/directors', director);
 var singer = require('./src/singer')
 app.use('/singers', singer);
 
+var twitter = require('./src/twitter')
+app.use('/twitter', twitter);
 
 app.listen(PORT)
 app.use(bodyParser.json());
